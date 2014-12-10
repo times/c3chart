@@ -10,6 +10,9 @@
     "angular",
     "c3"
   ],
+  "dependencies": {
+    "c3js-chart": "~0.4.7",
+  },
   "license": "MIT",
   "homepage": "http://github.com/times/c3chart",
   "ignore": [
