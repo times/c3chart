@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name c3-chart.directive:c3chart
+ * @name times.c3chart.directive:c3chart
  * @description
  * # c3chart
  */
-angular.module('c3-chart')
+angular.module('times.c3chart', [])
   .directive('c3chart', function ($window) {
     return {
       template: '<div></div>',

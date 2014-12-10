@@ -20,7 +20,7 @@ An AngularJS Directive to allow easy inclusion of C3 style charts in an Angular 
 3. Inject the `c3-chart` module as a depencency into your Angular app
 
 		angular.module('your.module', [
-			'c3-chart'
+			'times.c3chart'
 		]);
 
 
