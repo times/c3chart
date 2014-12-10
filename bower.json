@@ -1,0 +1,22 @@
+{
+  "name": "c3chart",
+  "main": "c3chart.js",
+  "version": "0.0.1",
+  "authors": [
+    "Chris Hutchinson <chris.hutchinson@thetimes.co.uk>"
+  ],
+  "description": "C3 Chart AngularJS Directive",
+  "keywords": [
+    "angular",
+    "c3"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/times/c3chart",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
