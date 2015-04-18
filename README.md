@@ -1,6 +1,6 @@
 # C3 Chart AngularJS Directive
 
-## Version 0.0.1
+## Version 0.0.2
 
 An AngularJS Directive to allow easy inclusion of C3 style charts in an Angular template.
 
@@ -10,11 +10,11 @@ An AngularJS Directive to allow easy inclusion of C3 style charts in an Angular 
 
 1. Install using Bower with `bower install times/c3chart --save`
 
-2. Include `c3.js`, `c3.css` and `c3chart.js` in your project
+2. Include `c3.min.js`, `c3.min.css` and `c3chart.js` in your project
 	
-		<link rel="stylesheet" href="bower_components/c3js-chart/c3.css" />
+		<link rel="stylesheet" href="bower_components/c3/c3.min.css" />
 
-		<script src="bower_components/c3js-chart/c3.js"></script>`
+		<script src="bower_components/c3/c3.min.js"></script>`
 		<script src="bower_components/c3chart/c3chart.js"></script>`
 
 3. Inject the `c3-chart` module as a depencency into your Angular app
@@ -43,3 +43,12 @@ __Controller__
 2. Create a `<c3chart>` element in your template, referencing your scope variable set up in the previous step:
 
 		<c3chart config="config"></c3chart>
+
+### Changelog
+
+#### 0.0.2 (April 18, 2015)
+- Update C3 to 0.4.10
+- Replace `c3js-chart` with `c3` in `bower.json`
+
+#### 0.0.1 (December 10, 2014)
+- Initial release
