@@ -51,11 +51,12 @@ angular.module('times.c3chart', [])
             } else { // Brand new chart; just generate().
               chart = $window.c3.generate(config);
             }
+            $window.chart = chart;
           }
-          
-          angular.element($window).bind('orientationchange', function () {
-            chart.flush();
-          });
+        });
+        
+        angular.element($window).bind('resize', function () {
+          chart.resize({width: $(chart.element).parent().width(), height: $(chart.element).parent().height() - 30});
         });
       }
     };
