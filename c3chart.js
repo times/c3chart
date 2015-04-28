@@ -18,8 +18,7 @@ angular.module('times.c3chart', [])
             var config = newValue;
             config.bindto = element[0];
             
-            if (oldValue) { // Chart already exists
-              
+            if (!angular.equals(oldValue, newValue) && typeof(oldValue) !== 'undefined') { // Chart already exists
               // Mutate the values to remove all data
               var copyA = _.cloneDeep(newValue); // Why angular.copy doesn't work here is beyond me.
               var copyB = _.cloneDeep(oldValue);
