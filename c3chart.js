@@ -52,6 +52,10 @@ angular.module('times.c3chart', [])
               chart = $window.c3.generate(config);
             }
           }
+          
+          angular.element($window).bind('orientationchange', function () {
+            chart.flush();
+          });
         });
       }
     };
